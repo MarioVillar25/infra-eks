@@ -2,7 +2,6 @@ replicaCount: 1
 
 containerPort: 80
 
-
 image:
   repository: 123456789.dkr.ecr.eu-west-1.amazonaws.com/credia-frontend
   tag: latest
