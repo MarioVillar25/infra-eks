@@ -1,5 +1,5 @@
 replicaCount: 1
 
 image:
-  repository: <ECR_URL>/credia-backend
+  repository: 823963318952.dkr.ecr.us-east-1.amazonaws.com/credia-backend
   tag: dev
