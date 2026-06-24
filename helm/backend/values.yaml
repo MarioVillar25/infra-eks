@@ -9,17 +9,14 @@ service:
   type: ClusterIP
   port: 8080
 
-# Esto es para manejar autoescalado según tráfico
 autoscaling:
   enabled: false
 
-# Esto es para comprobar si la app sigue viva
 livenessProbe:
   httpGet:
     path: /actuator/health
     port: http
 
-# Esto es para ver si está lista para recibir tráfico
 readinessProbe:
   httpGet:
     path: /actuator/health
@@ -32,8 +29,20 @@ httpRoute:
   rules: []
   annotations: {}
 
-  serviceAccount:
+serviceAccount:
   create: true
   automount: true
   annotations: {}
   name: ""
+
+podAnnotations: {}
+podLabels: {}
+imagePullSecrets: []
+podSecurityContext: {}
+securityContext: {}
+resources: {}
+volumes: []
+volumeMounts: []
+nodeSelector: {}
+tolerations: []
+affinity: {}
