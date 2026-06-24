@@ -31,3 +31,9 @@ httpRoute:
   hostnames: []
   rules: []
   annotations: {}
+
+  serviceAccount:
+  create: true
+  automount: true
+  annotations: {}
+  name: ""
