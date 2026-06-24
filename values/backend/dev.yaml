@@ -4,3 +4,17 @@ image:
   repository: "docker.io/library/credia-backend"
   tag: "v1"
   pullPolicy: IfNotPresent
+
+livenessProbe:
+  httpGet:
+    path: /actuator/health
+    port: http
+  initialDelaySeconds: 45
+  periodSeconds: 10
+
+readinessProbe:
+  httpGet:
+    path: /actuator/health
+    port: http
+  initialDelaySeconds: 45
+  periodSeconds: 10
