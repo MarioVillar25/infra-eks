@@ -1,5 +1,6 @@
 replicaCount: 1
 
 image:
-  repository: credia-backend
+  repository: docker.io/library/credia-backend
   tag: v1
+  pullPolicy: IfNotPresent
