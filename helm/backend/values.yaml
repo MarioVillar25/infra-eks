@@ -9,17 +9,17 @@ service:
   type: ClusterIP
   port: 8080
 
-//Esto es para manejar la capacidad del autoescalado según el tráfico que haya - más uso de CPU más pods y menos uso pues menos pods
+# Esto es para manejar autoescalado según tráfico
 autoscaling:
   enabled: false
 
-//Esto es para comprobar si la app sigue viva - si no responde reinicia el pod
-  livenessProbe:
+# Esto es para comprobar si la app sigue viva
+livenessProbe:
   httpGet:
     path: /actuator/health
     port: http
 
-//Esto es para ver si está preparada para recibir tráfico - Si está arrancando no le envies peticiones todavía
+# Esto es para ver si está lista para recibir tráfico
 readinessProbe:
   httpGet:
     path: /actuator/health
