@@ -1,6 +1,6 @@
 image:
-  repository: 823963318952.dkr.ecr.us-east-1.amazonaws.com/credia-frontend
-  tag: dev
+  repository: credia-frontend
+  tag: v1
 
 replicaCount: 1
 
