@@ -35,6 +35,13 @@ serviceAccount:
   annotations: {}
   name: ""
 
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  hosts: []
+  tls: []
+
 podAnnotations: {}
 podLabels: {}
 imagePullSecrets: []
