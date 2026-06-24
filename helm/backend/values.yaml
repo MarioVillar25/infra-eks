@@ -24,3 +24,10 @@ readinessProbe:
   httpGet:
     path: /actuator/health
     port: http
+
+httpRoute:
+  enabled: false
+  parentRefs: []
+  hostnames: []
+  rules: []
+  annotations: {}
