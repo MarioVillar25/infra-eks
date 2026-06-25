@@ -1,9 +1,13 @@
-image:
-  repository: credia-frontend
-  tag: v1
-
 replicaCount: 1
+
+image:
+  repository: "docker.io/library/credia-frontend"
+  tag: "v1"
+  pullPolicy: IfNotPresent
 
 service:
   type: LoadBalancer
   port: 80
+
+livenessProbe: {}
+readinessProbe: {}
