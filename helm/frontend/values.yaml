@@ -1,5 +1,7 @@
 replicaCount: 1
 
+containerPort: 80
+
 image:
   repository: "docker.io/library/credia-frontend"
   tag: "v1"
@@ -17,3 +19,20 @@ serviceAccount:
 
 livenessProbe: {}
 readinessProbe: {}
+
+autoscaling:
+  enabled: false
+
+httpRoute:
+  enabled: false
+  parentRefs: []
+  hostnames: []
+  rules: []
+  annotations: {}
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  hosts: []
+  tls: []
