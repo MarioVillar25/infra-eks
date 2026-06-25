@@ -11,6 +11,7 @@ service:
   type: LoadBalancer
   port: 80
 
+#test
 serviceAccount:
   create: true
   automount: true
