@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: "mariovillar/credia-frontend"
-  tag: "v1"
+  tag: "fef2618d"
   pullPolicy: IfNotPresent
 
 service:
