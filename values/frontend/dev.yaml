@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: "docker.io/library/credia-frontend"
+  repository: "mariovillar/credia-frontend"
   tag: "v1"
   pullPolicy: IfNotPresent
 
