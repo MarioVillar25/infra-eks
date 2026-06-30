@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: "mariovillar/credia-backend"
-  tag: "v2"
+  tag: "b578673a"
   pullPolicy: IfNotPresent
 
 livenessProbe: {}
